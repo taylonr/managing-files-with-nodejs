@@ -1,0 +1,19 @@
+{
+  "name": "managing-files-with-nodejs",
+  "version": "1.0.0",
+  "description": "Various scripts for the Pluralsight course Managing Files with Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylonr/managing-files-with-nodejs.git"
+  },
+  "author": "Nate Taylor (taylonr@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylonr/managing-files-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/taylonr/managing-files-with-nodejs#readme"
+}
