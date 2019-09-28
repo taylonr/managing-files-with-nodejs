@@ -1,12 +1,13 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const fd = fs.openSync("./data/app.log");
 
-let count = 0;
+module.exports.read = () => {
+  let count = 0;
 
-do{
+  do {
     const buffer = Buffer.alloc(200);
     count = fs.readSync(fd, buffer, 0, buffer.length, null);
     console.log(buffer.toString());
-}while(count > 0);
-
+  } while (count > 0);
+};
