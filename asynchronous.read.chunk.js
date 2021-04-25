@@ -4,7 +4,7 @@ const {convertCsv} = require('./csv.parse');
 let totalSize = 0;
 fs.stat("./data/app.log", (err, {size}) => totalSize = size);
 
-fs.open("./data/app.log", (err, fd) => {
+fs.open("./data/app.log", 'r', (err, fd) => {
   const buffer = Buffer.alloc(200);
 
   for(let i = 0; i <= totalSize / buffer.length; i++){
